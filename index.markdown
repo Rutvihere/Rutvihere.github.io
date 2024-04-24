@@ -9,7 +9,6 @@ Before you begin, make sure you have the following prerequisites:
 Docker installed on your local machine
 A Dockerhub account (you can sign up for free at Dockerhub)
 
-# Building a Three-Tier Application with Docker
 
 In this tutorial, we'll walk through the process of building a three-tier application using Docker. A three-tier architecture consists of three distinct layers: presentation tier (frontend), application tier (backend), and data tier (database). We'll containerize each tier separately and set up a multi-container environment.
 
@@ -28,7 +27,7 @@ Create a Docker network to ensure container isolation. This will help in managin
 Step 2: Run the Database Container
 Run the MongoDB container with the following command:
 
-
+![Alt Text](img3.jpg)
 
 Step 3: Creates a detached MongoDB container
 Connects it to a specified Docker network.
@@ -65,11 +64,11 @@ CMD [ "node", "server.js" ]: This specifies the command to run when the containe
 ![Alt Text](img6.jpg)
 ![Alt Text](img7.jpg)
 
-Step 7: Update server.js and Build Docker Image
+Step 6: Update server.js and Build Docker Image
 Make the necessary changes to the 'server.js' file to replace occurrences of 'localhost' with the name of the MongoDB container.
 ![Alt Text](img8.jpg)
 
-Once the changes are made, build the Docker image using the provided Dockerfile and run the container with the following command:
+Step 7:Once the changes are made, build the Docker image using the provided Dockerfile and run the container with the following command:
 
 ![Alt Text](img11.jpg)
 ![Alt Text](img12.jpg)
@@ -77,7 +76,7 @@ Once the changes are made, build the Docker image using the provided Dockerfile 
 
 Step 8:Upon successful execution, you can access the website at http://localhost:3000 and interact with it.
 
-
+![Alt Text](img14.jpg)
 
 
 
